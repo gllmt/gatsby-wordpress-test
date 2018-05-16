@@ -23,6 +23,7 @@ module.exports = {
         // This feature is untested for sites hosted on Wordpress.com.
         // Defaults to true.
         useACF: false,
+        verboseOutput: true,
         auth: {
           // If hostingWPCOM is true then you will need to communicate with wordpress.com API
           // in order to do that you need to create an app (of type Web) at https://developer.wordpress.com/apps/
