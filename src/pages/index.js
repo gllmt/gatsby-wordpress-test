@@ -9,9 +9,7 @@ const IndexPage = ({ data }) => {
       <p>Voici la liste des articles sur wordpress</p>
       {
         posts.map(post => (
-          <Link to={`/${post.node.slug}/`} >
           <h1 key={post.node.id} >{post.node.title}</h1>
-          </Link>
         ))
       }
     </div>

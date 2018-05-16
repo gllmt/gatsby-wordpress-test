@@ -34,6 +34,18 @@ module.exports = {
           wpcom_user: "pierreguillemot@munso.co",
           wpcom_pass: "qT5!b3Nru@bUe^$gV4!fZwP6zd@mw",
         },
+          // Set verboseOutput to true to display a verbose output on `npm run develop` or `npm run build`
+          // It can help you debug specific API Endpoints problems.
+          verboseOutput: false,
+          // Set how many pages are retrieved per API request.
+          perPage: 100,
+          // Set how many simultaneous requests are sent at once.
+          concurrentRequests: 10,
+          // Exclude specific routes using glob parameters
+          // See: https://github.com/isaacs/minimatch
+          // Example:  `["/*/*/comments", "/yoast/**"]` will exclude routes ending in `comments` and
+          // all routes that begin with `yoast` from fetch.
+          excludedRoutes: ["/*/*/comments", "/yoast/**"],
       },
     },
   ]
