@@ -13,7 +13,7 @@ module.exports = {
          */
         baseUrl: "wpgtby.wordpress.com",
         // The protocol. This can be http or https.
-        protocol: "https",
+        protocol: "http",
         // Indicates whether the site is hosted on wordpress.com.
         // If false, then the assumption is made that the site is self hosted.
         // If true, then the plugin will source its content on wordpress.com using the JSON REST API V2.
@@ -28,24 +28,23 @@ module.exports = {
           // If hostingWPCOM is true then you will need to communicate with wordpress.com API
           // in order to do that you need to create an app (of type Web) at https://developer.wordpress.com/apps/
           // then add your clientId, clientSecret, username, and password here
-          wpcom_app_clientSecret:
-            "a5MRwm8MaonHrZBXkDhHbJLYCeXAZFTXzXzPl1Bl5ay0vHVgt6ZNjgx5phkrfPrZ",
+          wpcom_app_clientSecret: "JPemA3W6CL7Cf9uIJgs5eJGQtNvhi8xpgFwLeYWdVPUtiaz5F7DuOQA3CSu0Kujg",
           wpcom_app_clientId: "58248",
           wpcom_user: "pierreguillemot@munso.co",
           wpcom_pass: "qT5!b3Nru@bUe^$gV4!fZwP6zd@mw",
         },
-          // Set verboseOutput to true to display a verbose output on `npm run develop` or `npm run build`
-          // It can help you debug specific API Endpoints problems.
-          verboseOutput: true,
-          // Set how many pages are retrieved per API request.
-          perPage: 100,
-          // Set how many simultaneous requests are sent at once.
-          concurrentRequests: 10,
-          // Exclude specific routes using glob parameters
-          // See: https://github.com/isaacs/minimatch
-          // Example:  `["/*/*/comments", "/yoast/**"]` will exclude routes ending in `comments` and
-          // all routes that begin with `yoast` from fetch.
-          excludedRoutes: ["/*/*/comments", "/yoast/**"],
+        // Set verboseOutput to true to display a verbose output on `npm run develop` or `npm run build`
+        // It can help you debug specific API Endpoints problems.
+        verboseOutput: true,
+        // Set how many pages are retrieved per API request.
+        perPage: 100,
+        // Set how many simultaneous requests are sent at once.
+        concurrentRequests: 10,
+        // Exclude specific routes using glob parameters
+        // See: https://github.com/isaacs/minimatch
+        // Example:  `["/*/*/comments", "/yoast/**"]` will exclude routes ending in `comments` and
+        // all routes that begin with `yoast` from fetch.
+        excludedRoutes: ["/*/*/comments", "/yoast/**"],
       },
     },
   ]
