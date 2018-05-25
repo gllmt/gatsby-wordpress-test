@@ -6,10 +6,12 @@ const IndexPage = ({ data }) => {
   return (
     <div>
       <h1>Blog</h1>
-      <p>Voici la liste des articles sur wordpress</p>
+      <p>Voici la liste des articles sur wordpress :</p>
       {
         posts.map(post => (
+          <Link key={post.node.id} to={`/${post.node.slug}/`}>
           <h1 key={post.node.id} >{post.node.title}</h1>
+          </Link>
         ))
       }
     </div>
