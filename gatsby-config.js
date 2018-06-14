@@ -28,10 +28,10 @@ module.exports = {
           // If hostingWPCOM is true then you will need to communicate with wordpress.com API
           // in order to do that you need to create an app (of type Web) at https://developer.wordpress.com/apps/
           // then add your clientId, clientSecret, username, and password here
-          wpcom_app_clientSecret: "JPemA3W6CL7Cf9uIJgs5eJGQtNvhi8xpgFwLeYWdVPUtiaz5F7DuOQA3CSu0Kujg",
-          wpcom_app_clientId: "58248",
-          wpcom_user: "pierreguillemot@munso.co",
-          wpcom_pass: "qT5!b3Nru@bUe^$gV4!fZwP6zd@mw",
+          wpcom_app_clientSecret: "",
+          wpcom_app_clientId: "",
+          wpcom_user: "",
+          wpcom_pass: "",
         },
         // Set verboseOutput to true to display a verbose output on `npm run develop` or `npm run build`
         // It can help you debug specific API Endpoints problems.
